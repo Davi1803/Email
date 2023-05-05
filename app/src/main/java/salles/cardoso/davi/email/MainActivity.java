@@ -14,9 +14,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     @Override
+    //criando método onCreate
     protected void onCreate(Bundle savedInstanceState) {
+        //Chamando superclasse do método
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //criando botão de enviar
         Button btnEnviar = (Button) findViewById(R.id.btnEnviar);
         //Definição da ação do click do botão
         btnEnviar.setOnClickListener(new View.OnClickListener() {
